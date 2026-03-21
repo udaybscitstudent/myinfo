@@ -19,12 +19,15 @@ message => alert("Thanks \n we will contact you soon")
 
     // related to menu
     let menu = document.querySelector('.menu');
+    // let closeMenu = document.querySelector('.closeMenu');
     let left = document.querySelector('#left');
     let right = document.querySelector('#right');
     let header = document.querySelector('#top');
 
-    let count=0;
     // click event on the menu
+    let count=0;
+    left.classList.add('left');
+    right.classList.add('right');
     var y = window.matchMedia("(max-width:1024px)");
 
     menu.addEventListener('click',()=>{
@@ -106,5 +109,21 @@ message => alert("Thanks \n we will contact you soon")
     x.addEventListener("change", function() {
     myFunction(x);
     });
+
+    // when you click outside the menu
+    window.addEventListener('click',(e)=>{
+        if(e.target!=menu && e.target!=left && e.target!=right){
+            if(count==1){
+                left.classList.remove('right');
+                right.classList.remove('rright');
+                header.classList.remove('rright');
+
+                left.classList.add('left');
+                right.classList.add('right');
+                header.classList.add('right');
+                count=0;
+            }
+        }
+    })
 
 
