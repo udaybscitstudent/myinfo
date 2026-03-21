@@ -19,15 +19,12 @@ message => alert("Thanks \n we will contact you soon")
 
     // related to menu
     let menu = document.querySelector('.menu');
-    // let closeMenu = document.querySelector('.closeMenu');
     let left = document.querySelector('#left');
     let right = document.querySelector('#right');
     let header = document.querySelector('#top');
 
     // click event on the menu
     let count=0;
-    left.classList.add('left');
-    right.classList.add('right');
     var y = window.matchMedia("(max-width:1024px)");
 
     menu.addEventListener('click',()=>{
