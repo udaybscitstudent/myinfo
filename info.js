@@ -23,8 +23,8 @@ message => alert("Thanks \n we will contact you soon")
     let right = document.querySelector('#right');
     let header = document.querySelector('#top');
 
-    // click event on the menu
     let count=0;
+    // click event on the menu
     var y = window.matchMedia("(max-width:1024px)");
 
     menu.addEventListener('click',()=>{
@@ -107,20 +107,17 @@ message => alert("Thanks \n we will contact you soon")
     myFunction(x);
     });
 
-    // when you click outside the menu
+    //when i click outside of the menu it should be closed
     window.addEventListener('click',(e)=>{
-        if(e.target!=menu && e.target!=left && e.target!=right){
+        if(e.target!=menu && e.target!=left && e.target!=right && e.target!=header){    
             if(count==1){
-                left.classList.remove('right');
-                right.classList.remove('rright');
-                header.classList.remove('rright');
+            left.classList.remove('right');
+            right.classList.remove('right');
 
-                left.classList.add('left');
-                right.classList.add('right');
-                header.classList.add('right');
-                count=0;
-            }
+            left.classList.add('left');
+            right.classList.add('right');
+            count=0;
+            }   
         }
     })
-
 
