@@ -48,7 +48,6 @@ The main purpose of this portfolio is to present my technical skills and project
 
 ## 📸 Preview
 
-(Add screenshots of your portfolio here for better presentation)
 <img src="image/Group.png">
 
 
@@ -57,5 +56,10 @@ The main purpose of this portfolio is to present my technical skills and project
 ## 📬 Contact
 
 If you would like to connect with me, feel free to reach out.
+✉️: udaykumarraj2058@gmail.com
+🌎: https://udaybscitstudent.github.io/myinfo/
+🔗: https://linkedin.com/in/uday-kumar-bb7746281
 
 ---
+
+<markquee>Thank You For visit here. </marquee>
