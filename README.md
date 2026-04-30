@@ -55,11 +55,11 @@ The main purpose of this portfolio is to present my technical skills and project
 
 ## 📬 Contact
 
-If you would like to connect with me, feel free to reach out.
-✉️: udaykumarraj2058@gmail.com
-🌎: https://udaybscitstudent.github.io/myinfo/
-🔗: https://linkedin.com/in/uday-kumar-bb7746281
+If you would like to connect with me, feel free to reach out.<br>
+✉️: udaykumarraj2058@gmail.com <br>
+🌎: https://udaybscitstudent.github.io/myinfo/ <br>
+🔗: https://linkedin.com/in/uday-kumar-bb7746281 <br>
 
 ---
 
-<markquee>Thank You For visit here. </marquee>
+<marquee>Thank You For visit here. </marquee>
