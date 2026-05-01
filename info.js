@@ -33,19 +33,25 @@ message => alert("Thanks \n we will contact you soon")
             left.classList.remove('left');
             right.classList.remove('right');
             header.classList.remove('right');
+            menu.classList.remove('bx' , 'bx-menu');
 
             left.classList.add('right');
             right.classList.add('right');
             header.classList.add('right');
+            menu.classList.add('bi' , 'bi-text-indent-right');
             count=1;
             }
 
             else{
             left.classList.remove('right');
             right.classList.remove('right');
+            menu.classList.remove('bi' , 'bi-text-indent-right');
+
 
             left.classList.add('left');
             right.classList.add('right');
+            menu.classList.add('bx' , 'bx-menu');
+
             count=0;
             }
         }
@@ -54,10 +60,14 @@ message => alert("Thanks \n we will contact you soon")
             left.classList.remove('right');
             right.classList.remove('rright');
             header.classList.remove('rright');
+            menu.classList.remove('bx' , 'bx-menu');
+
 
             left.classList.add('left');
             right.classList.add('right');
             header.classList.add('right');
+            menu.classList.add('bi' , 'bi-text-indent-right');
+
             // right.style.left="0px";
             count=1;
             }
@@ -65,10 +75,14 @@ message => alert("Thanks \n we will contact you soon")
             left.classList.remove('left');
             right.classList.remove('right');
             header.classList.remove('right');
+            menu.classList.remove('bi' , 'bi-text-indent-right');
+
 
             left.classList.add('right');
             right.classList.add('rright');
             header.classList.add('rright');
+            menu.classList.add('bx' , 'bx-menu');
+
             count=0;
             }
         }
@@ -80,10 +94,12 @@ message => alert("Thanks \n we will contact you soon")
         left.classList.remove('right');
         right.classList.remove('rright');
         header.classList.remove('rright');
-
+        menu.classList.remove('bi' , 'bi-text-indent-right');
+        
         left.classList.add('left');
         right.classList.add('right');
         header.classList.add('right');
+        menu.classList.add('bx' , 'bx-menu');
         count=1;
         }
     }
@@ -92,10 +108,12 @@ message => alert("Thanks \n we will contact you soon")
         left.classList.remove('left');
         right.classList.remove('right');
         header.classList.remove('right');
+        menu.classList.add('bi' , 'bi-text-indent-right');
 
         left.classList.add('right');
         right.classList.add('rright');
         header.classList.add('rright');
+        menu.classList.remove('bx' , 'bx-menu');
         count=0;
         }
     }
@@ -113,11 +131,23 @@ message => alert("Thanks \n we will contact you soon")
             if(count==1){
             left.classList.remove('right');
             right.classList.remove('right');
+            menu.classList.remove('bi' , 'bi-text-indent-right');
 
             left.classList.add('left');
             right.classList.add('right');
+            menu.classList.add('bx' , 'bx-menu');
             count=0;
-            }   
+            }  
+             
         }
     })
 
+    // highlight menu when we click on it
+     
+    let menuLinks = document.querySelectorAll('.menu-link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuLinks.forEach(link => link.classList.remove('text-purple-500'));
+            link.classList.add('text-purple-500');
+        });
+    });
