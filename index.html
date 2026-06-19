@@ -89,14 +89,14 @@
         </div>
     </div>
     <!-- Right side -->
-    <div class="flex justify-between p-3 py-4 min-md:text-xl max-md:text-lg fixed w-auto left-[300px] right-0 z-10 border-b border-gray-600 max-md:bg-purple-700 shadow-sm  bg-gray-900" id="top">
-        <h2 class="mx-10 max-md:mx-0 text-white font-bold ">Welcome To My Portfolio</h2>
-        <h2 class="cursor-pointer">
-            <a href="image/udayresume1.pdf" download><i title="download resume" class='bx bxs-download text-white text-lg mr-5'></i></a>
-            <i class='bx bx-menu text-lg text-white menu'></i>
+    <div class="flex justify-between h-15 leading-15 min-md:text-xl max-md:text-lg fixed w-auto left-[300px] right-0 z-10 border-b border-gray-600 max-md:bg-purple-700 shadow-sm rounded-t-lg bg-gray-900 " id="top">
+        <h2 class="mx-10 max-md:mx-0 text-white font-bold max-sm:hidden">Welcome To My Portfolio</h2>
+        <h2 class="cursor-pointer flex justify-between max-sm:w-full items-center">
+            <a href="image/udayresume1.pdf" class="border text-white text-sm bg-purple-500 px-5 text-center font-bold mx-4 h-8 leading-8 rounded" download>Download CV  <i title="download resume" class='bi bi-download'></i></a>
+            <div class="text-lg text-white border text-center rounded bg-purple-500 mr-5"><i class='bx bx-menu menu p-1.5'></i></div>
         </h2>
     </div>
-    <div class="left-[300px] w-auto right-0 absolute text-white h-auto" id="right">
+    <div class="left-[300px] w-auto right-0 absolute text-white h-auto overflow-x-auto"  id="right">
         <div class="flex w-[90%] m-auto max-md:flex-wrap h-screen max-md:h-auto " id="home">
             <div class="w-[50%] max-md:w-[100%] grid place-items-center" data-aos="fade-up" >
                 <div class="text-xl m-20 max-md:mx-0 max-md:mt-32 max-md:mb-0 max-md:text-center">
@@ -209,7 +209,7 @@
             </div>
         </div>
         <!-- certification -->
-        <div class="h-auto bg-gray-800 " id="certificate">
+        <div class="h-auto bg-gray-800" id="certificate">
             <div class="w-[90%] m-auto py-10">
                 <div class="relative pb-15 text-2xl font-bold text-purple-500 " data-aos="fade-up"><h2 class="border-b absolute pb-1">Certifications</h2></div>
                 <div class="grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2 gap-5 ">
@@ -225,6 +225,28 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="bg-gray-800 w-[90%] m-auto h-120 overflow-x-auto snap-x snap-center" id="certificate">
+                <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory">
+                    <div class="min-w-[250px] snap-center ">
+                        <img src="certificate/c.jpg">
+                    </div>
+                    <div class="min-w-[250px] snap-center">
+                        <img src="certificate/c.jpg">
+                    </div>
+                    <div class="min-w-[250px] snap-center">
+                        <img src="certificate/c.jpg">
+                    </div>
+                    <div class="min-w-[250px] snap-center">
+                        <img src="certificate/c.jpg">
+                    </div>
+                    <div class="min-w-[250px] snap-center">
+                        <img src="certificate/c.jpg">
+                    </div>
+                    <div class="min-w-[250px] snap-center">
+                        <img src="certificate/c.jpg">
+                    </div>
+            </div>
+        </div> -->
         <!-- project -->
         <div class="h-auto " id="project">
             <div class="w-[90%] m-auto py-10 pb-20">
@@ -290,7 +312,7 @@
                     <div class="w-[45%] max-sm:w-full" data-aos="fade-up">
                         <!-- address -->
                         <div class="flex">
-                            <div class="size-10 mt-2 rounded-full leading-tight grid place-items-center border"><i class="bi bi-geo-alt-fill text-2xl max-sm:text-lg"></i></div>
+                            <div class="size-8 leading-8 mt-2 rounded-full text-center  border"><i class="bi bi-geo-alt-fill text-lg"></i></div>
                             <div class="ml-2">
                                 <p class="font-bold text-lg">Address</p>
                                 <p class="text-md">Rajeev Nagar Road no- 15E Patna(800024), Bihar ,India</p>
@@ -298,7 +320,7 @@
                         </div>
                         <!-- email -->
                         <div class="flex my-5 ">
-                            <div class="size-10 mt-2 rounded-full grid place-items-center border"><i class="bi bi-envelope"></i></div>
+                            <div class="size-8 leading-8 mt-2 rounded-full text-center border"><i class="bi bi-envelope"></i></div>
                             <div class="ml-2">
                                 <p class="font-bold text-lg">Email</p>
                                 <p class="text-md">Uday.bscitstudent22.26704@cimage.in</p>
