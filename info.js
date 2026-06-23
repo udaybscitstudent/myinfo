@@ -1,16 +1,44 @@
-function sendEmail(){
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "uday.bscitstudent22.26704@cimage.in",
-    Password : "2AC7F92C39AA22D1C4D30DD8AB2380A10F39",
-    To :"uday.bscitstudent22.26704@cimage.in",
-    From :"uday.bscitstudent22.26704@cimage.in",
-    Subject : "contact form enquiry",
-    Body : "hello"
-}).then(
-message => alert("Thanks \n we will contact you soon")
-);
-}
+emailjs.init({
+  publicKey: "V54jgYZv9jKPqQPuZ"
+});
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_h9jdjhs",
+    "template_xvvjp2e",
+    this
+  )
+  .then(() => {
+    alert("Message Sent Successfully!");
+    form.reset();
+  })
+  .catch((error) => {
+    console.error(error);
+    alert("Failed to send message");
+  });
+});
+
+
+
+
+
+// function sendEmail(){
+//     Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "uday.bscitstudent22.26704@cimage.in",
+//     Password : "2AC7F92C39AA22D1C4D30DD8AB2380A10F39",
+//     To :"uday.bscitstudent22.26704@cimage.in",
+//     From :"uday.bscitstudent22.26704@cimage.in",
+//     Subject : "contact form enquiry",
+//     Body : "hello"
+// }).then(
+// message => alert("Thanks \n we will contact you soon")
+// );
+// }
     // loader
     let loader = document.querySelector("#loader");
     window.addEventListener('load',()=>{
