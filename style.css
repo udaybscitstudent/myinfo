@@ -38,4 +38,12 @@
     transition:200ms linear 50ms;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
 

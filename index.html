@@ -34,7 +34,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </head>
-<body class="bg-gray-900 font-serif">
+<body class="bg-gray-900 font-serif overflow-x-auto">
     <!-- loader -->
     <div id="loader" class="h-[100vh] w-full fixed z-1000"></div> 
     <!-- start left sidebar -->
@@ -99,7 +99,7 @@
             <div class="text-lg text-white border text-center rounded bg-purple-500 mr-5"><i class='bx bx-menu menu p-1.5'></i></div>
         </h2>
     </div>
-    <div class="left-[300px] w-auto right-0 absolute text-white h-auto overflow-x-auto"  id="right">
+    <div class="left-[300px] w-auto right-0 absolute text-white h-auto"  id="right">
         <div class="flex w-[90%] m-auto max-md:flex-wrap h-screen max-md:h-auto pt-10 pb-15" id="home">
             <div class="w-[50%] max-md:w-[100%] grid place-items-center" data-aos="fade-up" >
                 <div class="text-xl m-20 max-md:mx-0 max-md:mt-32 max-md:mb-0 max-md:text-center">
@@ -250,23 +250,80 @@
             </div>
         </div>
         <!-- certification -->
-        <div class="h-auto bg-gray-800 max-sm:w-[90%] m-auto rounded" id="certificate">
-            <div class="w-[90%] m-auto py-10">
-                <div class="relative pb-15 text-2xl font-bold text-purple-500 " data-aos="fade-up"><h2 class="border-b absolute pb-1">Certifications</h2></div>
-                <div class="grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-2 gap-5 ">
-                    <a href="certificate/datastructure.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/datastructure.jpg" class="border-4 border-gray-500 hover:border-0 hover:transition hover:delay-100 hover:ease-in" data-aos="fade-up"></a>
-                    <a href="certificate/c.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/c.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/cpp.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/cpp.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/python.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/python.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/html.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/html.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/css.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/css.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/aws.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/aws.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/ccna.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/ccna.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
-                    <a href="certificate/flutter.jpg" class="cursor-zoom-in hover:opacity-90"><img src="certificate/flutter.jpg" class="border-4 border-gray-500 hover:border-0" data-aos="fade-up"></a>
+        <div class="h-auto bg-gray-800 max-sm:w-[90%] pb-10 m-auto rounded " id="certificate" data-aos="fade-up">
+            <div class="relative py-10 w-[90%] m-auto my-10 text-2xl font-bold text-purple-500"><h2 class="border-b absolute pb-1">Certifications</h2></div>
+
+                <div class="w-[90%] mx-auto overflow-x-auto no-scrollbar overflow-y-hidden snap-x snap-mandatory scroll-smooth">
+                    <div class="grid grid-flow-col auto-cols-[320px] gap-5 h-60 items-center">
+                        <!-- first certificate -->
+                        <div class="snap-center ml-2 rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/datastructure.jpg">
+                                <img src="certificate/datastructure.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- second certificate -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/c.jpg">
+                                <img src="certificate/c.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- third certificate -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/cpp.jpg">
+                                <img src="certificate/cpp.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!--fourth certificate  -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/python.jpg">
+                                <img src="certificate/python.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- fifth certificate -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/html.jpg">
+                                <img src="certificate/html.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- sixth certificate -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/css.jpg">
+                                <img src="certificate/css.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- seventh certificate -->
+                         <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/aws.jpg">
+                                <img src="certificate/aws.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                        <!-- eighth certificate -->
+                         <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/ccna.jpg">
+                                <img src="certificate/ccna.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+
+                        <!--ninthth certificate -->
+                        <div class="snap-center rounded-xl overflow-hidden border border-slate-700
+                                    hover:scale-105 hover:shadow-xl transition-all duration-300">
+                            <a href="certificate/flutter.jpg">
+                                <img src="certificate/flutter.jpg" class="w-full h-52 object-cover">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
-         
+
+
         <!-- project -->
         <div class="h-auto " id="project">
             <div class="w-[90%] m-auto py-10 pb-20">
