@@ -47,3 +47,17 @@
 }
 
 
+@media (max-height: 650px) {
+  .socialbottom{
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+}
+
+@media(max-height:500px){
+    .veryfirst{
+        height:auto;
+    }
+}
+
